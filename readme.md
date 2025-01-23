@@ -1,7 +1,7 @@
 
-# CAPTCHA OCR with VisionEncoderDecoder Model
 
-This project is an Optical Character Recognition (OCR) system built using the VisionEncoderDecoder Model (specifically, Microsoft's TrOCR model) to recognize and decode text from CAPTCHA images. The model was trained and evaluated on a dataset of CAPTCHA images, aiming to predict text accurately from challenging and varied CAPTCHA examples.
+
+This project utilizes an Optical Character Recognition (OCR) system based on Microsoft's VisionEncoderDecoder model, TrOCR, to identify and decode text from CAPTCHA images. The model was trained and evaluated on a dataset of diverse and challenging CAPTCHA images to achieve accurate text predictions.
 
 ## Project Overview
 
@@ -11,6 +11,11 @@ The project consists of several stages:
 2. **Model Training**: The VisionEncoderDecoder model is trained on CAPTCHA images, with a custom loss function designed for character error rate (CER) evaluation.
 3. **Model Evaluation**: After each epoch, the model is evaluated using CER on the validation dataset to monitor accuracy and performance.
 4. **Prediction Interface**: A GUI was created to test the model on randomly selected test CAPTCHA images, displaying the predicted text.
+
+1. **Dataset Preparation**: CAPTCHA images were obtained from Kaggle and divided into training, validation, and testing datasets.
+2. **Model Training**: The VisionEncoderDecoder model was fine-tuned with a custom loss function that evaluates Character Error Rate (CER) for accurate text recognition.
+3. **Performance Evaluation**: After each training epoch, the model's accuracy was assessed using CER on the validation dataset.
+4. **Interactive Testing**: A graphical user interface (GUI) was developed to predict text from randomly selected CAPTCHA images in the test set.
 
 ## Installation
 
